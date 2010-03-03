@@ -6,3 +6,5 @@ notifyio {
 	userHash = ""
 	apiKey = ""
 }
+
+test.email = ""

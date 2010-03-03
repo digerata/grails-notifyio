@@ -21,8 +21,7 @@ import sun.misc.BASE64Encoder
 import groovyx.net.http.HTTPBuilder
 import static groovyx.net.http.ContentType.URLENC
 import org.codehaus.groovy.grails.commons.ConfigurationHolder
-import groovy.util.ConfigObject
-	
+
 class NotifyIoService {
 
     boolean transactional = false
