@@ -7,10 +7,10 @@ class NotifyIoGrailsPlugin {
     def dependsOn = [ rest:"0.3 > *" ]
     // resources that are excluded from plugin packaging
     def pluginExcludes = [
-            "grails-app/views/error.gsp"
+            "grails-app/views/error.gsp",
+			"grails-app/conf/"
     ]
 
-    // TODO Fill in these fields
     def author = "Mike Wille"
     def authorEmail = "mike.wille@flowz.com"
     def title = "Notify.io Plugin"

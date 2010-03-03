@@ -16,9 +16,12 @@ class NotifyIoServiceTests extends GrailsUnitTestCase {
     }
 
 	void testIcon() {
-		new NotifyIoService().notify("digerata@gmail.com", "This is my test message.",
-			"My Application", "http://a1.twimg.com/profile_images/59714330/me_bigger.png",
-			"http://flowz.com", true);
+		new NotifyIoService().notify(recipient: "digerata@gmail.com",
+									text:"This is my test message.",
+									title: "My Application",
+									icon:"http://a1.twimg.com/profile_images/59714330/me_bigger.png",
+									link:"http://flowz.com",
+									sticky:false);
 		
 	}
 }

@@ -1,4 +1,32 @@
-Grails plugin to integrate with Notify.io.
+Grails plugin to integrate with Notify.io
+=========================================
 
 There isn't much to integrating, but we are all lazy, aren't we?
 
+To install:
+-----------
+
+	grails install-plugin notifyio
+
+To configure:
+-------------
+
+Add to your Config.groovy:
+
+	notifyio {
+		userHash = "[userHash from your notify.io account]"
+		apiKey = "[apiKey from your notify.io account]"
+	}
+
+To use:
+-------
+
+	def notifyIoService
+	//...
+	notifyIoService.notify("email@domain.com", "Your notification text.")
+
+
+To build and test this plugin:
+------------------------------
+
+Setup your notificonfiguration by creating a file in ~/.grails/NotifyIo-config.groovy 

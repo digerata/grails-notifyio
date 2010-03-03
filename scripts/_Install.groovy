@@ -8,3 +8,13 @@
 //
 //    ant.mkdir(dir:"${basedir}/grails-app/jobs")
 //
+
+ant.echo(message:"""
+Add configuration to your Config.groovy:
+
+notifyio {
+	userHash: "b3af127..."
+	apiKey: "pgr..."	
+}
+
+""")
