@@ -6,7 +6,7 @@ There isn't much to integrating, but we are all lazy, aren't we?
 To install:
 -----------
 
-	grails install-plugin notifyio
+	grails install-plugin notify-io
 
 To configure:
 -------------
