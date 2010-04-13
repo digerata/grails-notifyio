@@ -18,11 +18,26 @@ class NotifyIoServiceTests extends GrailsUnitTestCase {
 
     void testBasic() {
 
-		new NotifyIoService().notify(email, "This is my test message.");
+		def n = new NotifyIoService()
+		assert 200 == n.notify(email, "This is my test message.")
     }
 
+	void testInit() {
+		def n = new NotifyIoService()
+		try {
+			n.notify(email, "This is my test message.")
+
+		} catch(Exception e) {
+			// don't care, real test is next call.
+		}
+
+		assert 200 == n.notify(email, "This is a second test to make sure initialization isn't broken.")
+	}
+
 	void testIcon() {
-		new NotifyIoService().notify(recipient: email,
+		def n = new NotifyIoService()
+		
+		assert 200 == n.notify(recipient: email,
 									text:"This is my test message.",
 									title: "My Application",
 									icon:"http://github.com/images/modules/header/logov3.png",

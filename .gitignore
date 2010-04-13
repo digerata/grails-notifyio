@@ -6,3 +6,4 @@ target/
 out/
 stacktrace.log
 plugin.xml
+web-app/

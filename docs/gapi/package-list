@@ -1,0 +1,5 @@
+DefaultPackage
+grails-app.conf
+grails-app.services.grails.plugins.notifyio
+scripts
+test.integration.grails.plugins.notifyio
